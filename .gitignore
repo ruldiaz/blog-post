@@ -1,0 +1,14 @@
+# Ignore node modules in backend
+backend/node_modules/
+
+# Ignore node modules in frontend
+frontend/node_modules/
+
+# Environment variables
+*.env
+
+# Log files
+*.log
+
+# OS-specific files
+.DS_Store

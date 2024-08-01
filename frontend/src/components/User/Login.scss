@@ -1,0 +1,91 @@
+// Define variables for easy theme management
+$primary-color: #333;  // Primary color for the form background
+$text-color: #fff;     // Text color for labels and placeholders
+$button-color: #555;   // Color for the button
+$hover-color: #777;    // Hover color for the button
+$link-color: #fff;     // Color for links
+$link-hover-color: #ddd;  // Hover color for links
+
+.login-container {
+  display: flex;  // Use Flexbox for centering
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  // Full viewport height to center vertically
+  background-color: $primary-color; // Background color for the entire container
+}
+
+.login-form {
+  background-color: rgba(138, 72, 72, 0.1); // Slightly transparent white background
+  padding: 2rem;  // Padding around the form
+  border-radius: 10px;  // Rounded corners
+  box-shadow: 0 4px 8px rgba(129, 84, 84, 0.2); // Subtle shadow for depth
+  text-align: center;  // Center align text
+  margin-bottom: 1rem;
+
+  label {
+    display: block; // Block display for labels to take full width
+    margin-bottom: 0.5rem; // Margin below labels
+    color: $text-color; // Text color for labels
+    font-weight: bold; // Bold text for labels
+  }
+
+  input {
+    width: 100%;  // Full width inputs
+    padding: 0.5rem;  // Padding inside inputs
+    margin-bottom: 1rem;  // Margin below inputs
+    border: none;  // Remove default borders
+    border-radius: 5px;  // Rounded corners
+    outline: none;  // Remove default outline
+    font-size: 1rem;  // Font size for readability
+    background-color: rgba(255, 255, 255, 0.8); // Light background for inputs
+    color: #333;  // Text color inside inputs
+  }
+
+  button {
+    width: 100%;  // Full width button
+    padding: 0.75rem;  // Padding inside the button
+    border: none;  // Remove default borders
+    border-radius: 5px;  // Rounded corners
+    background-color: $button-color;  // Background color for the button
+    color: $text-color;  // Text color for the button
+    font-weight: bold;  // Bold text for the button
+    cursor: pointer;  // Pointer cursor on hover
+    transition: background-color 0.3s ease;  // Smooth transition for hover
+    margin-bottom: 1rem;
+
+    &:hover {
+      background-color: $hover-color;  // Change background on hover
+    }
+  }
+
+  a {
+    display: block; // Display as block to separate the links
+    color: $link-color;  // Color for unvisited links
+    text-decoration: none;  // Remove underline
+    margin-bottom: 1rem;
+
+    &:hover {
+      color: $link-hover-color;  // Hover color for links
+    }
+
+    &:visited {
+      color: $link-color;  // Keep visited links the same color as unvisited links
+    }
+
+    &:active {
+      color: $link-hover-color;  // Active color for links
+    }
+  }
+}
+
+.error {
+  color: red;  // Error text color
+  margin-top: 1rem;  // Margin for spacing
+}
+
+.google-sign-in{
+  background-color: blue;
+  padding: 5px 5px;
+  color: white;
+}

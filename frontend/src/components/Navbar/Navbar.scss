@@ -1,0 +1,46 @@
+$primary-color: #333; // Define a primary color for the navbar
+$hover-color: #555;   // Define a color for the hover effect
+$text-color: #fff;    // Define a text color
+$logout-bg-color: #e74c3c; // Background color for logout button
+$logout-hover-bg-color: #c0392b; // Background color on hover for logout button
+
+.navbar {
+  background-color: $primary-color;
+  padding: 1rem;
+}
+
+.nav-list {
+  list-style: none; // Remove bullet points
+  margin: 0;        // Remove default margin
+  padding: 0;       // Remove default padding
+  display: flex;    // Align items horizontally
+  justify-content: center;
+
+  .nav-item {
+    margin: 0 1rem; // Space between items
+
+    .nav-link {
+      text-decoration: none; // Remove underline
+      color: $text-color;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      transition: background-color 0.3s ease;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: $hover-color; // Change background on hover
+      }
+    }
+
+    .logout-button {
+      background-color: $logout-bg-color; // Background color for logout button
+      border: none; // Remove default border
+      color: $text-color; // Text color for logout button
+      cursor: pointer; // Change cursor to pointer
+
+      &:hover {
+        background-color: $logout-hover-bg-color; // Background color on hover
+      }
+    }
+  }
+}

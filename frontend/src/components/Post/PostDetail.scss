@@ -1,0 +1,32 @@
+.post-detail {
+   padding: 2rem;
+   max-width: 800px;
+   margin: 0 auto;
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Add shadow for depth
+ 
+   h1 {
+     font-size: 2rem;
+     margin-bottom: 1rem;
+   }
+ 
+   .post-image {
+     width: 100%;
+     max-width: 800px; // Limit the maximum width
+     height: auto; // Maintain aspect ratio
+     border-radius: 8px; // Rounded corners
+     margin-bottom: 1rem;
+   }
+ 
+   p {
+     line-height: 1.6;
+     margin-bottom: 1rem;
+   }
+ 
+   .post-date {
+     font-size: 0.9rem;
+     color: #888;
+   }
+ }
+ 
