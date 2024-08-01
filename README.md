@@ -3,9 +3,12 @@ Installation instructions
 clone repo
 
 inside backend directory run npm install
+
 node --watch server.js
 
+
 inside frontend directory, run npm install
+
 npm start
 
 
